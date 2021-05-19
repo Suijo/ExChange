@@ -70,11 +70,13 @@ public class ExController {
         try {
             Double.parseDouble(inval.getText());
         }catch (NumberFormatException e){
+            Logger.error(new NumberFormatException("Wrong format of quantity or nothing at all."),"A NumberFormatException is occured.");
             errorlabel.setText("Please write the amount of money you want to exchange!");
         }
         try {
                 getMultiplier(gcurr);
         }catch (NullPointerException e){
+            Logger.error(new NullPointerException("Wrong currency selected."),"A NullPointerException is occured.");
             errorlabel.setText("Please select the currency you want to get!");
         }
         outval.setText(gcurr+" "+ExChanger.change_calc(Double.parseDouble(inval.getText()),getMultiplier(gcurr)));
@@ -86,7 +88,7 @@ public class ExController {
     /**
      *
      * @param curr
-     * @return
+     * @return element of changevalue
      * @throws IOException
      * @throws NullPointerException
      * finds the perfect converted currency's value to the selected currency.
@@ -95,14 +97,16 @@ public class ExController {
         CurrencyDao cd = new CurrencyDao();
         Changevalues[] changevalues = new Changevalues[]{};
         try{
-            cd.GetValueOf((String) sellcurr.getValue());
+            //cd.GetValueOf((String) sellcurr.getValue());
+            changevalues = cd.GetValueOf((String) sellcurr.getValue());
         }catch(IllegalArgumentException e){
+            Logger.error(new IllegalArgumentException("Did not select getting currency"),"A IllegalArgumentException is occured.");
             errorlabel.setText("Please select input currency value!");
 
         }
-            //;
 
-        changevalues = cd.GetValueOf((String) sellcurr.getValue());
+
+
         ;
         for(Changevalues cv:changevalues){
             switch (curr){
