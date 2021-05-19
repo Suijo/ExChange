@@ -1,0 +1,38 @@
+[
+  {
+    "name":"USD",
+    "changevalues":[
+  {"ToUSD":"1",
+    "ToHUF":"286.74",
+    "ToJPY":"109.20",
+    "ToEUR":"0.82"
+  }]
+},
+{
+  "name":"HUF",
+  "changevalues": [{"ToUSD":"0.003487",
+    "ToHUF":"1",
+    "ToJPY":"0.38",
+    "ToEUR":"0.00285"
+  }]
+},
+  {
+  "name":"JPY",
+    "changevalues":[
+      {
+        "ToUSD": "0.0091575",
+        "ToHUF": "2.63",
+        "ToJPY": "1",
+        "ToEUR": "0.00749288"
+      }]
+},
+  {
+    "name":"EUR",
+    "changevalues":[
+{"ToUSD":"1.22",
+  "ToHUF":"350.46",
+  "ToJPY":"133.46",
+  "ToEUR":"1"
+}]
+}
+]
