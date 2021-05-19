@@ -1,6 +1,6 @@
 # Calories calculator
 
-Calorie calculator with and example diet for a day.
+Exchanger.
 
 **Guide to run:**
 
@@ -10,4 +10,4 @@ Calorie calculator with and example diet for a day.
 
 **Developer:**
 
-Adam Pallagi
+Boros Gergely
