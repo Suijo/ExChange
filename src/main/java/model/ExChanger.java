@@ -17,6 +17,5 @@ public class ExChanger {
 
         return String.valueOf(String.format("%.2f",quantity*value));
 
-
     }
 }
