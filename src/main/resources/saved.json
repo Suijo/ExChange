@@ -1,1 +1,1 @@
-[{"from": "EUR","to": "HUF","money": 2,"sellorbuy": "sell"}]
+[{"sellorbuy":"sell","money":2,"from":"EUR","to":"HUF"},{"sellorbuy":"Buy","money":32.0,"from":"USD","to":"HUF"},{"sellorbuy":"Buy","money":43.0,"from":"HUF","to":"HUF"},{"sellorbuy":"Buy","money":14.0,"from":"HUF","to":"HUF"}]
