@@ -4,6 +4,11 @@ import com.google.gson.Gson;
 import model.Changevalues;
 import model.Currency;
 import model.Saved;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
+
 
 import org.apache.commons.lang3.ArrayUtils;
 import org.tinylog.Logger;
@@ -35,13 +40,7 @@ public class CurrencyDao{
      * @return
      * @throws IOException
      */
-    /*private String ReadFile() throws IOException{
-        try (BufferedReader reader = new BufferedReader(new FileReader(getClass().getResource("/players.json").getFile()))) {
-            return reader.lines().collect(Collectors.joining());
-        } catch (IOException e) {
-            throw new IOException("Can not read player data");
-        }
-    }*/
+
     private String ReadSaveFile() throws IOException {
         try (BufferedReader reader = new BufferedReader(new FileReader(getClass().getResource("/saved.json").getFile()))) {
             return reader.lines().collect(Collectors.joining());
@@ -53,6 +52,8 @@ public class CurrencyDao{
         }
 
     }
+
+
 
 
     private String ReadFile() throws IOException {

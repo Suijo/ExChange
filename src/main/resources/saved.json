@@ -1,8 +1,1 @@
-[
-  {
-    "from": "EUR",
-    "to": "HUF",
-    "money": 2,
-    "sellorbuy": "sell"
-  }
-]
+[{"from": "EUR","to": "HUF","money": 2,"sellorbuy": "sell"}]

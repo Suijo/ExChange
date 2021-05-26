@@ -8,6 +8,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import model.Changevalues;
 import model.ExChanger;
+import org.json.simple.parser.ParseException;
 import org.tinylog.Logger;
 
 import java.io.IOException;
@@ -61,7 +62,7 @@ public class ExController {
      * @param actionEvent Invoked when pressed.
      * @throws IOException
      */
-    public void change(ActionEvent actionEvent) throws IOException {
+    public void change(ActionEvent actionEvent) throws IOException, ParseException {
         errorlabel.setText("");
         String scurr = (String) sellcurr.getValue();
         String gcurr = (String) getcurr.getValue();
