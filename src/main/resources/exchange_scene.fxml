@@ -19,6 +19,7 @@
       <TextField fx:id="inval" layoutX="40.0" layoutY="152.0" />
       <Label fx:id="outval" layoutX="228.0" layoutY="269.0" prefHeight="34.0" prefWidth="258.0" />
       <Label layoutX="105.0" layoutY="313.0" prefHeight="54.0" prefWidth="371.0" text="Achtung: The Exchanging price does not inculde exchanging fees.  Everything is calculated with the actual currencies on 2021.05.19. " wrapText="true" />
-      <Label fx:id="errorlabel" layoutX="163.0" layoutY="189.0" prefHeight="72.0" prefWidth="353.0" wrapText="true"/>
+      <Label fx:id="errorlabel" layoutX="163.0" layoutY="189.0" prefHeight="72.0" prefWidth="353.0" wrapText="true" />
+      <ChoiceBox fx:id="sbchoice" layoutX="39.0" layoutY="193.0" prefWidth="150.0" />
    </children>
 </Pane>

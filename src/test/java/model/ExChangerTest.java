@@ -12,8 +12,8 @@ public class ExChangerTest {
     void testExChanger() {
         ExChanger exchanger = new ExChanger();
 
-        String expected = "32,00";
-        String actual = exchanger.change_calc(32,1);
+        String expected = "115";
+        String actual = exchanger.change_calc(100,1,"Sell");
         assertEquals(expected,actual);
 
 
@@ -23,7 +23,7 @@ public class ExChangerTest {
         ExChanger exchanger = new ExChanger();
 
         String expected = "0,00";
-        String actual = exchanger.change_calc(0,0);
+        String actual = exchanger.change_calc(0,0,"Buy");
         assertEquals(expected,actual);
 
 
