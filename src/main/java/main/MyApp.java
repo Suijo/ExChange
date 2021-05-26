@@ -7,6 +7,9 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import org.tinylog.Logger;
 
+/**
+ * Displays the fxml view.
+ */
 public class MyApp extends Application {
     @Override
     public void start(Stage stage) throws Exception {

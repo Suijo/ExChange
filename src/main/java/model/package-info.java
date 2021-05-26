@@ -1,5 +1,5 @@
 /**
- * Provieds functions to count the kcal needed and the fucntion to count the correct food amount.
+ * Provide a function to Exchange the Currency to another. And contains models.
  */
 
 

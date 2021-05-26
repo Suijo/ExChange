@@ -15,7 +15,9 @@ import org.tinylog.Logger;
 import java.io.*;
 import java.util.stream.Collectors;
 
-
+/**
+ * All of the file manager functions are here.
+ */
 public class CurrencyDao{
 
     private Gson gson = new Gson();
@@ -23,14 +25,19 @@ public class CurrencyDao{
 
 
     /**
-     *
-     * @return
+     * Reads the model of the file.
+     * @return a model of Currency.
      * @throws IOException
      */
     public Currency[] GetCurrencies() throws IOException {
         return gson.fromJson( ReadFile(), Currency[].class);
     }
 
+    /**
+     * getting an instance of a saved model.
+     * @return an object as model of saved.
+     * @throws IOException
+     */
     public Saved[] GetSaveModel() throws IOException {
         return ggson.fromJson( ReadSaveFile(), Saved[].class);
     }
@@ -58,6 +65,16 @@ public class CurrencyDao{
         }
 
     }
+
+    /**
+     * Saves all the data to a json file.
+     * @param fromval the currency you own.
+     * @param toval the currency you want to get.
+     * @param moneyval the amount of money you want to change.
+     * @param sellorbuyval do you want to buy or sell.
+     * @throws IOException
+     * @throws ParseException
+     */
     public static void SaveCurr(String fromval, String toval, double moneyval,String sellorbuyval) throws IOException, ParseException {
 
         JSONParser jsonParser = new JSONParser();
@@ -118,8 +135,8 @@ public class CurrencyDao{
 
     /**
      * returns the selected currency's values from the json file.
-     * @param currencyName
-     * @return
+     * @param currencyName name of the currency you want to get.
+     * @return an object that contains the value of a currency.
      * @throws IOException
      * @throws IllegalArgumentException
      */

@@ -11,7 +11,7 @@
     <description>A program egy valutaváltó kalkulátor. Egy kiválasztott valutát átváltja a kiválasztott valutába a megadott menyniségben.</description>
     <developers>
         <developer>
-            <name>Boros Gergley</name>
+            <name>Boros Gergely</name>
             <email>bogergo9@gmail.com</email>
         </developer>
 
@@ -147,11 +147,12 @@
             <artifactId>json-simple</artifactId>
             <version>1.1.1</version>
         </dependency>
+        <!--
         <dependency>
             <groupId>org.example</groupId>
-            <artifactId>etrend</artifactId>
+            <artifactId>ExChanger</artifactId>
             <version>1.0</version>
-        </dependency>
+        </dependency>-->
     </dependencies>
     <build>
         <plugins>
@@ -222,7 +223,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-checkstyle-plugin</artifactId>
-                <version>3.0.0</version>
+                <version>3.1.2</version>
                 <configuration>
                     <configLocation>checkstyle.xml</configLocation>
                 </configuration>
@@ -321,7 +322,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-checkstyle-plugin</artifactId>
-                <version>3.0.0</version>
+                <version>3.1.2</version>
                 <configuration>
                     <configLocation>checkstyle.xml</configLocation>
                 </configuration>

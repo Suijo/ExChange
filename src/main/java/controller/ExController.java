@@ -14,7 +14,9 @@ import org.tinylog.Logger;
 import java.io.IOException;
 
 
-
+/**
+ * makes the view from FXML and contains functions.
+ */
 public class ExController {
 
     ObservableList<String> currencyList = FXCollections.observableArrayList("USD","HUF","JPY","EUR");
@@ -47,6 +49,9 @@ public class ExController {
     private ExChanger exchanger;
 
 
+    /**
+     * Initializing List to Choiceboxes to be shown.
+     */
     @FXML
     public void initialize(){
 
@@ -58,7 +63,7 @@ public class ExController {
     }
 
     /**
-     * Reads in all the data from the application and invokes the calculator.
+     * Reads in all the data from the application and invokes the calculator when change button is pressed.
      * @param actionEvent Invoked when pressed.
      * @throws IOException
      */
@@ -84,12 +89,10 @@ public class ExController {
     }
 
     /**
-     *
-     * @param curr
-     * @return element of changevalue
+     * Reads the Currency value from the json file.
+     * @param curr The currency you want to get the value of.
+     * @return the exact value of the currency in the selected currency.
      * @throws IOException
-     * @throws NullPointerException
-     * finds the perfect converted currency's value to the selected currency.
      */
     private double getMultiplier(String curr) throws IOException {
         CurrencyDao cd = new CurrencyDao();
