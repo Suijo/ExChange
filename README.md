@@ -1,11 +1,11 @@
-# Calories calculator
+# Exchanger
 
 Exchanger.
 
 **Guide to run:**
 
 * mvn package
-* java -jar target/etrend-1.0.jar 
+* java -jar target/exchange-1.0.jar 
 
 
 **Developer:**
